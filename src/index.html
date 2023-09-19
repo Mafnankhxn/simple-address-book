@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>My Address Book</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app bg-slate-100 h-screen grid justify-center items items-center">
+        <h1 class="title text-slate-900 text-4xl">My Address Book</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="contact-list-body">
+                <!-- data goes here -->
+            </tbody>
+        </table>
+        <button class="add-contact-btn bg-slate-900 text-slate-100 py-3 px-7" id="add-contact-btn">Add Contact</button>
+
+        <div id="contact-modal" class="modal">
+            <div class="modal-content">
+                <span class="cross" id="cross">&times;</span>
+                <h2>Contact Details</h2>
+                <form id="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
